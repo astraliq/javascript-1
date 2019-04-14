@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'fontello';
+  src: url(../fonts/fontello.svg) format('svg'), url(../fonts/fontello.woff) format('woff'), url(../fonts/fontello.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  color: darkgray;
+  margin-left: -25px;
+  font-size: 20px;
+}
+html {
+  background-color: #ffffff;
+}
+body {
+  margin: 0 auto;
+  width: 71%;
+}
+form {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+input {
+  outline: none;
+}
+.reg {
+  width: 100%;
+  background-color: #ffffff;
+  min-height: 150px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding: 50px 0 0 0;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.reg-reg {
+  text-transform: uppercase;
+  margin: 0 10px 0 120px;
+  font-weight: bold;
+  color: #9fd468;
+  width: 150px;
+}
+.reg-block {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 70%;
+}
+.reg-pass,
+.reg-repeat_pass,
+.reg-login {
+  margin: 0 0 20px 5px;
+  width: 70%;
+  padding: 0 0 0 10px;
+  border: none;
+  border-bottom: 2px solid black;
+  height: 25px;
+  text-transform: capitalize;
+}
+.reg label {
+  font-size: 18px;
+  font-weight: bold;
+  width: 22%;
+}
+.reg label:first-letter {
+  text-transform: capitalize;
+}
+label[for=reg-login]:after,
+label[for=reg-pass]:after,
+label[for=reg-repeat_pass]:after {
+  content: " *";
+}
+input::placeholder {
+  text-transform: none;
+}
+input[type=submit],
+input[type=reset] {
+  text-transform: uppercase;
+  width: 141px;
+  height: 40px;
+  border-radius: 5px;
+  display: block;
+  margin: 22px 20px 0 20px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  color: #445161;
+  border: none;
+  background-color: #efefef;
+  -webkit-box-shadow: 0px 1px 9px 2px #191919;
+  box-shadow: 0px 1px 9px 2px #191919;
+}
+input[type=submit]:hover,
+input[type=reset]:hover {
+  background-color: gray;
+  transition: 0.2s;
+}
+input[type=submit]:active,
+input[type=reset]:active {
+  color: whitesmoke;
+  background-color: darkgray;
+}
+.alertMsg {
+  position: absolute;
+  color: red;
+  font-size: 13px;
+}
+#alertLoginID {
+  right: 43px;
+  top: -15px;
+}
+#alertPassID {
+  right: 43px;
+  top: 30px;
+}
+#alertRepeatPassID {
+  right: 43px;
+  top: 77px;
+}
